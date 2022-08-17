@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <input type="radio" id="rdo1" onchange="if(rdo2.checked && rdo3.checked) rdo3.checked=false">Good </br>
+    <input type="radio" id="rdo2" onchange="if(rdo2.checked && rdo3.checked) rdo1.checked=false">Fast </br>
+    <input type="radio" id="rdo3" onchange="if(rdo2.checked && rdo3.checked) rdo2.checked=false">Cheap
+    <script>
+        let rdo1 = document.getElementById('rdo1');
+        let rdo2 = document.getElementById('rdo2');
+        let rdo3 = document.getElementById('rdo3');
+        
+        function rdoChange(flag){
+            console.log(flag);
+            if (flag == 1){
+                if(rdo2.checked && rdo3.checked) 
+                    rdo3.checked
+            }
+        }
+    </script>
+</body>
+</html>
