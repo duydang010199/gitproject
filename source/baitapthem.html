@@ -11,8 +11,7 @@
       let number = null;
       do {
         number = Number(prompt("Enter value "));
-      } while (number < 1 || number > 10);
-      alert("Số bạn vừa nhập là " + number);
+      } while (isNaN(number) || number < 1 || number > 10);
     </script>
   </body>
 </html>

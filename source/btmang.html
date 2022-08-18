@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*let names = Number(prompt("names"));
+      let lists = new Array(names);
+      for (i = 1; i < lists.length; i++) {
+        console.log(lists[i]);
+      }*/
+      let sizes = Number(prompt("sizes"));
+      let number = new Array(sizes);
+      for (i = 10; i <= 40; i++) {
+        number[i] = Math.floor(Math.random() * (40 - 10) + 10);
+        console.log(number[i]);
+      }
+    </script>
+  </body>
+</html>
