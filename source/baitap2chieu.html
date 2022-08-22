@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let min = 10,
+        max = 50;
+      let numbers = [];
+      let row = 4;
+      let cell = 5;
+      for (r = 0; r < row; r++) {
+        numbers[r] = [];
+        for (c = 0; c < cell; c++) {
+          numbers[r][c] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+      }
+      for (r = 0; r < row; r++) {
+        document.write(`${numbers[r]}<br/>`);
+      }
+    </script>
+  </body>
+</html>

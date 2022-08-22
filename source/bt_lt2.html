@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Work To Do</th>
+            </tr>
+            <tbody id="tbJobs" ></tbody>
+        </thead>
+    </table>
+    <script>
+        let jobs = [
+            "rinse ",
+            "chicken care",
+            "fish care",
+            "cleaning house",
+            "water tree"
+        ]
+        let tbJobs = document.querySelector("#tbJobs");
+        for (let j = 0; j < jobs.length; j++){
+            tbJobs.innerHTML += `<tr>
+                                    <td> ${j + 1} </td>
+                                    <td> ${jobs[j]} </td>
+                                </tr>`
+
+        }
+    </script>
+  </body>
+</html>
